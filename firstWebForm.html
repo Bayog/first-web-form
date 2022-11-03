@@ -5,6 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .name-info{
+            width: 300px;
+        }
+        .contact-info{
+
+        }
+    </style>
 </head>
 <body>
     <h1>My First Web Form</h1>
@@ -12,21 +20,23 @@
         <fieldset >
             <legend>Name Information</legend>
             <label for="FirstName">First Name</label>
-            <input type="text" id="firtName" name="firstName">
+            <input type="text" class="name-info" required id="firtName" placeholder="Please type your first name" name="firstName"><br>
             <label for="lastName">Last Name</label>
-            <input type="text" id="lastName" name="lastName">
+            <input type="text" class="name-info" required id="lastName" placeholder="Please type your last name" name="lastName">
         </fieldset>
         <filedset>
             <legend>Contact Information</legend>
             <label for="email">Email:</label>
-            <input type="email" name="email" id="email">
+            <input type="email" class="contact-info" name="email" id="email" placeholder="input Email Address"><br>
             <label for="telephone">Phone:</label>
-            <input type="tel" name="telephone" id="telephone">
+            <input type="tel" class="contact-info" name="telephone" id="telephone" placeholder="input Phone Number">
         </filedset>
         <fieldset>
-            <legend>Birthday:</legend>
+            <legend>Date Information:</legend>
             <label for="dob">Date of Birth</label>
-            <input type="date" name="dob" id="dob">
+            <input type="date" name="dob" required id="dob"><br>
+            <label for="today">Today's Date</label>
+            <input type="date" name="today" value="2022-11-03" id="today">
         </fieldset>
         <fieldset>
             <input type="submit" value="Submit">
